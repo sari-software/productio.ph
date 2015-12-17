@@ -1,0 +1,197 @@
+@font-face {
+  font-family: 'piologo';
+  src: url('Fonts/PIOLogo-Regular.otf');
+}
+.border {
+  border-bottom: solid #d1d2d4 1px;
+}
+body {
+  margin: 0px;
+}
+.main {
+  width: 828px;
+  background-color: white;
+  margin: 0px auto;
+  z-index: -2;
+}
+ul {
+  background-color: #e6e7e8;
+  float: left;
+  width: 828px;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+ul:before,
+ul:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: #e6e7e8;
+  width: 3000px;
+  content: "";
+}
+ul:before {
+  right: 100%;
+}
+ul:after {
+  left: 100%;
+}
+.menu-logo {
+  width: 36px;
+  height: 36px;
+  background: url("Pics/pio-small-white.svg");
+  position: absolute;
+  top: -1px;
+  left: 6px;
+  font-weight: normal;
+}
+li:nth-child(1) a {
+  vertical-align: center;
+  padding-left: 36px;
+}
+li a {
+  display: block;
+  line-height: 54px;
+  font-family: "proxima-nova";
+  font-weight: 700;
+  font-size: 10pt;
+  text-decoration: none;
+  color: #d12229;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 0 20px;
+}
+a h6 {
+  font-family: piologo;
+  font-size: 25pt;
+  margin: 0px;
+  display: block;
+  line-height: 54px;
+}
+li.menu-item:hover {
+  background-color: #dbdcde;
+  box-shadow: 0px 0px 3px 1px #bbbdc0 inset;
+}
+li.menu-item.active:hover {
+  box-shadow: 0px 0px 3px 1px #ad1a1f inset;
+}
+li.menu-item.active {
+  background-color: #d12229;
+}
+li.active a {
+  color: white;
+}
+.menu-item {
+  background-color: #e6e7e8;
+  float: left;
+  height: 54px;
+  list-style-type: none;
+}
+.section {
+  margin-top: 85px;
+}
+#banner {
+  font-family: "proxima-nova";
+  font-weight: 300;
+  font-size: 37.5pt;
+  color: #58585b;
+  line-height: 122%;
+  position: relative;
+  top: 35px;
+  float: left;
+  width: 463px;
+  height: 365px;
+  margin: 0 0 35px 9px;
+  padding-right: 80px;
+  border-bottom: solid #d1d2d4 1px;
+}
+.big {
+  float: left;
+  z-index: 0;
+  margin: 0 9px 127px 9px;
+}
+.copy {
+  display: block;
+  font-family: "proxima-nova";
+  font-weight: 400;
+  font-size: 12pt;
+  line-height: 132%;
+  color: #58585b;
+  margin: 0;
+}
+.divider {
+  float: left;
+  height: 20px;
+  width: 810px;
+  margin: 0 9px 0 9px;
+}
+.box {
+  width: 258px;
+  margin: 4px 9px 0px 9px;
+  float: left;
+}
+.header {
+  border-bottom: solid #d1d2d4 1px;
+  height: 25px;
+  font-family: "proxima-nova";
+  font-weight: 300;
+}
+.subtitle {
+  font-family: "proxima-nova";
+  font-weight: 700;
+  color: #58585b;
+  font-size: 25pt;
+  line-height: 45px;
+  border-bottom: solid #d1d2d4 1px;
+  padding: 10px 0 6px 0;
+  margin: 0 0 5px 0;
+}
+.by-implication {
+  position: absolute;
+  right: 0;
+  top: -6px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  opacity: 0.25;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.by-implication:hover {
+  opacity: 0.85;
+}
+em {
+  font-family: "proxima-nova";
+  font-weight: 400;
+  color: #d12229;
+  font-style: normal;
+  font-weight: bold;
+}
+.gray {
+  font-family: "proxima-nova";
+  font-weight: 700;
+  color: #58585b;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+html[xmlns] .clearfix {
+  display: block;
+}
+* html .clearfix {
+  height: 1%;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset='utf-8'>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<script src="jquery-1.10.1.js" type="text/javascript"></script>
+	<script type="text/javascript" src="jquery.pagescroller.lite.js"></script>
+	<script src="PIO.js" type="text/javascript"></script>
+	<script type="text/javascript" src="//use.typekit.net/fsp8wfe.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+
+<body>
+	<div class="main">
+
+		<ul id="myNavigation" class="pageScrollerNav topNav">
+				<li class="menu-item active"><a href=#bigtext><span class="menu-logo"></span>PRODUCT I|O</a></li>
+				<li class="menu-item"><a href=#howitworks>HOW IT WORKS</a></li>	
+				<li class="menu-item"><a href=#links>CONTACT</a></li>
+		</ul>
+
+		<div class="section clearfix" id="bigtext">
+			<img class=big src="Pics/PIO1.png">
+			<p id="banner">The power of an advanced inventory management and retail system in a smart mobile device.</p>
+			<p class="copy box">Designed for different types of retail outlets, the Product In/Out system can grow with you as your business grows. You do not need to spend for a full-blown POS system with features that you do not need. </p>
+			<p class="copy box">Adaptable and immediately deployable, Product I/O is a simplified yet advanced solution for tracking sales and inventory for all kinds of businesses.</p>
+		</div>
+
+		<div class="section clearfix" id="howitworks">
+			<p class="copy divider header">HERE'S HOW IT WORKS:</p>
+			<div class="box">
+				<img src="Pics/PIO-load.png"> 
+				<p class="subtitle">LOAD</p>
+				<p class="copy"><em>Inventory can be preloaded and SKUs entered into the system. </em>Additional SKUs can be added and modified from the backend and pushed down to mobile devices. There’s no need to modify each device when updating inventory.</p> 
+			</div>
+			<div class="box">	
+				<img src="Pics/PIO-sell.png">
+				<p class="subtitle">SELL</p>
+				<p class="copy"><em>It takes seconds to sell your product or service using Product I/O. </em> Items can be checked out using a barcode scanner or entered via a menu system on the mobile device. The price and quantity are automatically computed by the system. The waiting time for each customer to buy an item is significantly reduced allowing retailers to sell more items.</p>  
+			</div>	
+			<div class="box">	 
+				<img src="Pics/PIO-track.png">
+				<p class="subtitle">TRACK</p>
+				<p class="copy"><em>Monitor and analyze your sales wherever you are, using a web browser. </em> A customized interface shows you important metrics at a glance such as current level of inventory, sales, peak selling hours, and other relevant information. Important data is immediately synced to the cloud and stored in a secure server.</p> 
+			</div>	
+		</div>
+
+		<div class="section clearfix" id="links">
+			<p class="copy divider header" style="width: 534px">CONTACT</p><div class="divider header box" style="margin-top:0px;"></div>
+			<div class="box">
+				<p class="copy gray">FOR INQUIRIES CONTACT:</p>
+				<img src="Pics/PIO-logo.png">
+				<hr  style="margin:0px 0 0 0;"><p class="copy"><em>info@productio.ph</em><br>Tao Corporate Center, 2291 Chino Roces Ave, Makati City, Philippines<br>+632 836 5888 local: 7019</p>
+			</div>	
+			<div class="box">
+				<iframe width="258px" height="209" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Tao+Corporate+Center,+Pasong+Tamo+Extension,+Makati+City,+Metro+Manila,+Philippines&amp;aq=0&amp;oq=tao+c2291+Pasong+Tamo+Extension,+Makati+City,+Metro+Manila,+Philippines&amp;sll=14.536821,121.020619&amp;sspn=0.015412,0.026071&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=Tao+Corporate+Center,+2291+Chino+Roces+Ave,+Lungsod+ng+Makati,+Metro+Manila,+Philippines&amp;z=14&amp;vpsrc=0&amp;iwloc=A&amp;ll=14.536023,121.022129&amp;output=embed"></iframe>
+			</div>	
+			<div class="box">
+				<p class="copy gray">A SARI SOFTWARE SOLUTION</p>
+				<a href="sari.ph"><img src="Pics/PIO-sari-logo.png"></a>
+				<hr style="margin:0px;"><p class="copy"><em>SARI SOFTWARE SOLUTIONS</em><br>info@sari.ph</p> 
+			</div>	
+			<div class="divider" style="height: 170px;"></div>
+			<div class="divider" style="position: relative;"><p class="copy">(c) 2013 Copyright Sari Software Solutions</p>
+				<a class="by-implication" href="http://byimplication.com"><img src="Pics/byimplication-logo.svg" alt="By Implication"></a>
+			
+			</div>	
+			<div class="divider"></div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('body').pageScroller({
+				navigation: '.topNav',
+				sectionClass: 'section',
+				scrollOffset: -80
+			});
+		});
+	</script>
+
+</body>
